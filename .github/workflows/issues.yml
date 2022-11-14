@@ -1,0 +1,10 @@
+name: Issues in Project
+on:
+  issues:
+    types: [opened]
+jobs:
+  Post-Details:
+    runs-on: ubuntu-latest
+    setps:
+      - name: Echo Issues
+        run: echo '${{ toJSON(github) }}'
