@@ -3,6 +3,6 @@ on: issues
 jobs:
   Post-Details:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - name: Echo Issues
         run: echo '${{ toJSON(github.event) }}'
